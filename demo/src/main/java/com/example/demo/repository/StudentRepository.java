@@ -1,4 +1,9 @@
 package com.example.demo.repository;
 
-public interface StudentRepository {
+import com.example.demo.dto.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepository extends JpaRepository<Student,Integer> {
 }
